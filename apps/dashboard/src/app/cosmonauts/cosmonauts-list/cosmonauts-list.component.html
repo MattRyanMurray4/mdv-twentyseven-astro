@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> <h1>Select an Cosmonaut</h1> </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item
+        *ngFor="let person of people"
+        (click)="selected.emit(person)"
+        class="mat-list-item"
+      >
+        <h1 matLine>{{ person.name }}</h1>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

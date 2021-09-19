@@ -14,8 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strictPropertyInitialization": false,
     "paths": {
-      "@astro/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@astro/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@astro/core-data": ["libs/core-data/src/index.ts"],
+      "@astro/core-state": ["libs/core-state/src/index.ts"],
+      "@env/environments": ["libs/environment/src/lib/environments/index.ts"],
+      "@astro/material": ["libs/material/src/index.ts"],
+      "@astro/theme": ["libs/theme/src/index.ts"],
+      "@astro/ui-library": ["libs/ui-library/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
